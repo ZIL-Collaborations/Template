@@ -10,22 +10,34 @@ A ZILF game template by Alex Proudfoot">
 "The Mechanics"
 
 <ROUTINE GO ()
-    <SETG HERE DARKNESS>
-    <INIT> <MOVE PLAYER ,HERE>
+    <SET-THE-SCENE>
+    <INTRODUCE-THE-GAME>
     <CRLF> <V-VERSION>
     <CRLF> <V-LOOK>
     <MAIN-LOOP>
 >
 
-<ROOM DARKNESS (IN ROOMS) (DESC "Darkness")
-    (LDESC "It is pitch black. You can't see a thing.")
->
-
 <INSERT-FILE "parser">
+
+;<INSERT-FILE "Actions">
+;<INSERT-FILE "Activities">
+
+<ROOM DARKNESS (DESC "In the Dark") (IN ROOMS)
+    (LDESC "It's scary. You can't see anything ...")
+>
 
 
 "The Game"
 
-<ROUTINE INIT ()
-    <RETURN>
+<ROUTINE SET-THE-SCENE ()
+    <SETG HERE DARKNESS>
+    <MOVE PLAYER ,HERE>
 >
+
+<ROUTINE INTRODUCE-THE-GAME ()
+    <TELL CR CR "This game starts in the dark ..." CR>
+>
+
+;<INSERT-FILE "Characters">
+;<INSERT-FILE "Locations">
+;<INSERT-FILE "Scenes">

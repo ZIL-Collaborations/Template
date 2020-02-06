@@ -1,8 +1,8 @@
 "Template - Main"
 
-<CONSTANT GAME-BANNER
-"Template|
-A ZILF game template by Alex Proudfoot">
+<CONSTANT GAME-TITLE "Template">
+<CONSTANT GAME-DESCRIPTION
+"A ZILF game template by Alex Proudfoot">
 
 <CONSTANT RELEASEID 1> <VERSION ZIP>
 

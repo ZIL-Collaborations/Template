@@ -55,7 +55,10 @@ library extensions."
 
 "Extra Game Verbs"
 
-<SETG EXTRA-GAME-VERBS '(NOTIFY-OFF NOTIFY-ON SCORE)>
+<SETG EXTRA-GAME-VERBS
+   '(NOTIFY-OFF NOTIFY-ON SCORE ;"from Scoring"
+    )
+>
 
 "Library Hooks"
 
